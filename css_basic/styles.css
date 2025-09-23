@@ -1,0 +1,24 @@
+body, main{
+    display: flex
+}
+
+main {
+    flex-direction: row 
+    flex: auto
+}
+
+body{
+    flex-direction: column
+}
+
+article{
+    flex: 2
+}
+
+aside{
+    flex: 1
+}
+
+article, aside{
+    overflow-y: auto;
+}
