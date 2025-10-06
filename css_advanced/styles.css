@@ -1,0 +1,40 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body{
+    font-family: sans-pro ,sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+
+header {
+    height: auto;
+    min-height: 80px;
+}
+
+header, main section:first-child{
+    background-color: #1c1c1c;
+    background-image: url("https://media.gettyimages.com/id/1533700823/photo/human-mouth.jpg?s=612x612&w=0&k=20&c=HXsoIj794T3WaDavErsjd2CjnfdTmBMo763yqEinDRE=");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
