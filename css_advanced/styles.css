@@ -1,40 +1,106 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
 
-body{
-    font-family: sans-pro ,sans-serif;
-}
-*{
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
     box-sizing: border-box;
 }
 
-header {
-    height: auto;
-    min-height: 80px;
+:root{
+    --purple-color: #C271FF;
+    --light-color: #FFFFFF;
+    --font: "Source Sans 3", sans-serif;
+    
 }
 
-header, main section:first-child{
-    background-color: #1c1c1c;
-    background-image: url("https://media.gettyimages.com/id/1533700823/photo/human-mouth.jpg?s=612x612&w=0&k=20&c=HXsoIj794T3WaDavErsjd2CjnfdTmBMo763yqEinDRE=");
+body {
+    font-family: var(--font);
+    color: var(--light-color);
+}
+
+.start {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: wrap;
+    width: 100%;
+    padding: 10px 45px 80px;
+}
+
+.hero-section {
+    background-image: url(Images/Object.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-attachment: fixed;
+}
+
+
+.links {
+    list-style: none;
+    display: flex;
+    gap: 2.5rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--light-color);
+}
+
+.hero-board {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    /*width: 100%;*/
+    text-align: center;
+    font-weight: 700;
+    font-size: 120px;
+}
+
+.board {
+    display: flex;
+    justify-content: center;
+    gap: 4em;
+    margin-top: -20px;
+}
+
+.button-container {
+    background-color: #C271FF;
+    border-radius: 20px;
+    /*padding: 15px 10px;*/
+    color: #FFFFFF;
+    margin: 20px 0px 100px;
+    width: 160px;
+    height: 45px;
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+#H2 {
+    font-weight: 300;
+}
+#span1 {
+    color: var(--purple-color) ;
+}
+.people {
+    display: flex;
+    flex-direction: row;
+    margin-top: 75px;
+    gap: 100px;
+    text-align: center;
+}
+
+.pic {
+    border-radius: 100px;
 }
